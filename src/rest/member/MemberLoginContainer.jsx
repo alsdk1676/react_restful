@@ -28,8 +28,6 @@ const MemberLoginContainer = () => {
 
       console.log(memberVO)
 
-
-
     })}>
       
       <label>

@@ -66,9 +66,7 @@ const PostUpdate = () => {
         <Link to ={"/"}>
           <button disabled={isSubmitting}>수정하기</button>
         </Link>
-
-
-      
+        
     </form>
   );
 };

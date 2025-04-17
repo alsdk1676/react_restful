@@ -14,9 +14,10 @@ const PostDelete = () => {
         if(!res.ok) throw new Error("게시글 삭제 중 오류 발생!")
           window.location.href = "/"
       }).catch ("알 수 없는 오류 발생")
-    } else {
-      alert("게시물 삭제 취소!")
-    }
+    } 
+    // else {
+    //   alert("게시물 삭제 취소!")
+    // }
   }
 
   return (
