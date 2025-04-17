@@ -5,6 +5,7 @@ import PostUpdate from '../rest/post/PostUpdate';
 import PostDelete from '../rest/post/PostDelete';
 import LoginContainer from '../rest/member/LoginContainer';
 import ReadContainer from '../rest/member/ReadContainer';
+import MemberLoginContainer from '../rest/member/MemberLoginContainer';
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
   },
   {
     path : "/login",
-    element : <LoginContainer />
+    element : <MemberLoginContainer />
   },
   {
     path : "/member",
