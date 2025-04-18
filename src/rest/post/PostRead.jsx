@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams, useSearchParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const PostRead = () => {
   // 쿼리스트링
@@ -36,7 +36,7 @@ const PostRead = () => {
       <div>
         <p>제목 : {postTitle}</p>
         <p>내용 : {postContent}</p>
-        <Link to={`/update/${id}`}>수정하기</Link>
+        <Link to={`/post/update/${id}`}>수정하기</Link>
         <button onClick={async () => {
           await fetch(`http://localhost:10000/posts/api/post/${id}`, {
             method : "DELETE"
