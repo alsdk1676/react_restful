@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setUser, setUserStatus } from '../../modules/user';
 import { useNavigate } from 'react-router-dom';
 
+// 민아
+
 // react-hook-form
 const MemberLogin = () => {
 
@@ -27,7 +29,7 @@ const MemberLogin = () => {
   return (
     <form onSubmit={handleSubmit(async (data) => {
 
-      const id = 6;
+      const id = 12;
       const memberVO = {...data, id} // post로 보내서 맞는지 확인?
 
       await fetch(`http://localhost:10000/members/api/member/${id}`, {

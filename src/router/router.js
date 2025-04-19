@@ -4,6 +4,7 @@ import PostRead from '../rest/post/PostRead';
 import PostUpdate from '../rest/post/PostUpdate';
 import PostDelete from '../rest/post/PostDelete';
 import MemberLogin from '../rest/member/MemberLogin';
+import Member from '../rest/member/Member';
 import JoinContainer from '../rest/member/JoinContainer';
 import UpdateContainer from '../rest/member/UpdateContainer';
 import DeleteContainer from '../rest/member/DeleteContainer';
@@ -51,7 +52,8 @@ const router = createBrowserRouter([
   },
   {
     path : "/member/login",
-    element : <MemberLogin />
+    // element : <MemberLogin />
+    element : <Member />
   },
   {
     path : "/member/join",
